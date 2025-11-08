@@ -1,24 +1,24 @@
-package bookstore.pojos;
+package csd214_fall2025.pojos;
 
 import java.time.LocalDate;
 
-public class Magazine extends Publication implements Editable {
+public class Magazine extends Publication {
     private Long id;
     private int orderQty;
     private LocalDate currentIssue;
 
     public Magazine() {}
 
-    public Magazine(Long id, String title, double price, int copies, String isbn,
+    public Magazine(Long id, String title, double price, int copies, String isbn10,
                     String description, int orderQty, LocalDate currentIssue) {
-        super(title, price, copies, isbn, description);
+        super(title, price, copies, isbn10, description);
         this.id = id;
         this.orderQty = orderQty;
         this.currentIssue = currentIssue;
     }
 
-    @Override public Long getId() { return id; }
-    @Override public void setId(Long id) { this.id = id; }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
     public int getOrderQty() { return orderQty; }
     public void setOrderQty(int orderQty) { this.orderQty = orderQty; }

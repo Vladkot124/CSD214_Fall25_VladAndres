@@ -1,9 +1,10 @@
-package bookstore;
+package csd214_fall2025;
 
-import bookstore.pojos.*;
+import csd214_fall2025.pojos.*;
 import java.time.LocalDate;
 
 public class Util {
+
     public static Book getFakeBook() {
         return new Book(1L, "Effective Java", 45.99, 5, "0134685997", "Java best practices", "Joshua Bloch");
     }
@@ -17,6 +18,6 @@ public class Util {
     }
 
     public static Ticket getFakeTicket() {
-        return new Ticket("Concert ticket", 59.99, 50);
+        return new Ticket("Concert ticket", 59.99, 50, LocalDate.of(2025, 12, 25));
     }
 }

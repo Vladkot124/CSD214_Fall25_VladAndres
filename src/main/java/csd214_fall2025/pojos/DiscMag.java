@@ -1,4 +1,4 @@
-package bookstore.pojos;
+package csd214_fall2025.pojos;
 
 import java.time.LocalDate;
 
@@ -7,9 +7,9 @@ public class DiscMag extends Magazine {
 
     public DiscMag() { super(); }
 
-    public DiscMag(Long id, String title, double price, int copies, String isbn,
+    public DiscMag(Long id, String title, double price, int copies, String isbn10,
                    String description, int orderQty, LocalDate currentIssue, boolean hasDisc) {
-        super(id, title, price, copies, isbn, description, orderQty, currentIssue);
+        super(id, title, price, copies, isbn10, description, orderQty, currentIssue);
         this.hasDisc = hasDisc;
     }
 

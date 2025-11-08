@@ -1,0 +1,9 @@
+Inversion of Control, or IoC, is a way of designing programs so that classes do not create or control the objects they need by themselves. Instead, the program gives these objects to the classes. This makes the program more flexible because classes do not depend on specific implementations and can easily work with different objects.
+
+In our lab, IoC was used through repositories and services. Repositories are classes that store and retrieve data, and in our project, we created three types of repositories: one that keeps data in memory, one that saves data to a file, and one that stores data in a database. Services are classes that contain the main logic of the program. They do not know which repository is being used, they just work with a repository interface. The repository is given to the service when the program runs. This means the service can work with any type of repository without changing its code.
+
+For example, the BookService can be given an in-memory repository, a file repository, or a database repository. The service uses it the same way, and it does not need to know how the repository stores data. This is a practical example of inversion of control, because the service does not control its dependencies; they are provided to it from outside.
+
+Using IoC has many benefits. It makes the program easier to change because we can switch the type of repository without rewriting the services. It also makes testing easier because we can provide a fake repository to test the service without using real files or databases. Finally, it helps organize the code because services handle logic, repositories handle data, and the main program only sets everything up.
+
+Overall, inversion of control is an important design principle, and in our lab, using repositories and services shows how IoC can make a program more flexible, maintainable, and easier to test
