@@ -1,14 +1,14 @@
-package csd214_fall2025.pojos;
+package csd214.bookstore.pojos;
 
 import java.time.LocalDate;
 
 public class DiscMag extends Magazine {
+
     private boolean hasDisc;
 
-    public DiscMag() { super(); }
+    public DiscMag() { }
 
-    public DiscMag(Long id, String title, double price, int copies, String isbn10,
-                   String description, int orderQty, LocalDate currentIssue, boolean hasDisc) {
+    public DiscMag(long id, String title, double price, int copies, String isbn10, String description, int orderQty, LocalDate currentIssue, boolean hasDisc) {
         super(id, title, price, copies, isbn10, description, orderQty, currentIssue);
         this.hasDisc = hasDisc;
     }
@@ -18,6 +18,6 @@ public class DiscMag extends Magazine {
 
     @Override
     public String toString() {
-        return super.toString() + (hasDisc ? " + Disc" : "");
+        return super.toString() + "  Has Disc: " + hasDisc;
     }
 }

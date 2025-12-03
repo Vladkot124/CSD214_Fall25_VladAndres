@@ -9,10 +9,10 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- List all your entity classes -->
-        <class>csd214_fall2025.entites.BookEntity</class>
-        <class>csd214_fall2025.entites.PublicationEntity</class>
-        <class>csd214_fall2025.entites.ProductEntity</class>
-        <class>csd214_fall2025.entites.TicketEntity</class>
+        <class>csd214.entites.BookEntity</class>
+        <class>csd214.entites.PublicationEntity</class>
+        <class>csd214.entites.ProductEntity</class>
+        <class>csd214.entites.TicketEntity</class>
 
         <properties>
             <!-- MySQL Database Connection -->
