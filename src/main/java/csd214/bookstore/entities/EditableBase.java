@@ -1,4 +1,4 @@
-package csd214.bookstore.pojos;
+package csd214.bookstore.entities;
 
 public abstract class EditableBase implements Editable {
     private Long id;

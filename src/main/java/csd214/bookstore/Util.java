@@ -1,7 +1,7 @@
 package csd214.bookstore;
 
 import com.github.javafaker.Faker;
-import csd214.bookstore.pojos.*;
+import csd214.bookstore.entities.*;
 
 import java.time.LocalDate;
 import java.util.UUID;

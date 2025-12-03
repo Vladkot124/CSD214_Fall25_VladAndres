@@ -1,6 +1,6 @@
 package csd214.bookstore;
 
-import csd214.bookstore.pojos.*;
+import csd214.bookstore.entities.*;
 
 import java.io.InputStream;
 import java.io.PrintStream;

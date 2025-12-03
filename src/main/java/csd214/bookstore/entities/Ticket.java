@@ -1,4 +1,4 @@
-package csd214.bookstore.pojos;
+package csd214.bookstore.entities;
 
 public class Ticket extends EditableBase implements SaleableItem {
 

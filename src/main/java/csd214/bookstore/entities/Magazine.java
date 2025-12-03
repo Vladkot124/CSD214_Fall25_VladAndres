@@ -1,4 +1,4 @@
-package csd214.bookstore.pojos;
+package csd214.bookstore.entities;
 
 import java.time.LocalDate;
 
