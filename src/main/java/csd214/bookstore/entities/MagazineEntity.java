@@ -1,5 +1,6 @@
 package csd214.bookstore.entities;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
@@ -7,6 +8,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "magazines")
+@DiscriminatorValue("MAGAZINE")
 public class MagazineEntity extends PublicationEntity {
 
     private int orderQty;
